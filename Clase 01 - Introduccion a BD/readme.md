@@ -44,6 +44,16 @@ Introducción al mundo de las base de datos.
     - La cardinalidad en un diagrama ER indica cuántas instancias de una entidad pueden estar relacionadas con instancias de otra entidad en una relación específica. 
     - Se representa mediante símbolos como **1** (uno) o **N** (muchos).
     - Por ejemplo, una relación "1 a N" indica que una instancia de la entidad A puede estar relacionadas con varias instancias de la entidad B, pero una instancia de la entidad B solo puede estar relacionada con una instancia de la entidad A. 
+
+    ![Cardinalidad](image.png)
+
+    - **Uno**: indica que una instancia de una entidad está relacionada con exactamente una instancia de otra entidad en relación específica. Es una cardinalidad de uno a uno. 
+    - **Muchos**: inidca que instancia de una entidad puede estar relacionada con varias instancias de otra entidad en la relación específica. Es una cardinalidad de uno a muchos. 
+    - **Uno (y solo uno)**: indica que una instancia de una entidad está relacionada con exactamente una instancia de otra entidad en relación específica, y esta relación es obligatoria. No se permite la ausencia de la relación en ninguno de los lados. 
+    - **Cero a uno**: Indica que una instancia de una entidad puede estar opcionalmente relacionada con una instancia de otroa entidad en la relación específica. Puede haber una relación  no haber ninguna relación. 
+    - **Uno o muchos**: indica que una instancia de una entidad está relacionada con al menos una instancia, pero puede estar relacionada con varias instancias de otra entidad en la relación específica. Es similar a la cardinalidad de muchos, pero se enfatiza que debe haber al menos una relación. 
+    - **Cero a muchos**: indica que una instancia de una entidad puede estar relacionada con ninguna, una o varias instancias de otra entidad en la relación específica. No hay una restricción sobre la cantidad de relaciones permitidas. 
+
 - 👉 **Ordinalidad**:
     - La ordinalidad se refiere a la existencia obligatoria o no de una relación entre entidades. Se representa mediante símbolos como **O** (opcional) o **M** (obligatorio).
     - Por ejemplo, una relación "1 a 0" indica que una instancia de la entidad A puede estar relacionada opcionalmente con una instancia de la entidad B, mientras que una relación "1 a M" indica quue ina instancia de la entidad A debe estar relacionada obligatoriamente con una instancia de la entidad B.
