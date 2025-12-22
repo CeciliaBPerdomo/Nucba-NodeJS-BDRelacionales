@@ -5,4 +5,4 @@
 # NodeJS - DB Relacionales
 
 ## Temario
-- Clase 01: Introducción a Base de datos
+- Clase 01: **Introducción a Base de datos**
