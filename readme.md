@@ -6,3 +6,4 @@
 
 ## Temario
 - Clase 01: **Introducción a Base de datos**
+- Clase 02: **Bases de datos relacionales I**
