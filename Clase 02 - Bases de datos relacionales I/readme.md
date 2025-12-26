@@ -71,19 +71,32 @@ docker compose version
     - días 
 - 👉 La columna "**id** es una clave primaria autoincremental, miestras que las columnas "**nombre**"y "**dias**" son de tipo varchar y almacenarán texto. 
 
-![Create Table](image-1.png)
+```sql
+CREATE TABLE camadas (
+    id serial not null primary key,
+    nombre varchar(5),
+    dias varchar(255)
+)
+```
 
 #### Select * From
 - 👉 Es una sentencia SQL utilizada para recuperar datos de una tabla o vista en una base de datos. La clásula **FROM** especifica ;a tabla desde la cuál se extraerán los datos. 
 - 👉 En el ejemplo, estamos seleccionando todos los registros de la tabla "camadas" y mostrándolos en el resultado.
-![Select](image-2.png)
+
+```sql
+SELECT * FROM camadas;
+```
 
 #### Insert into
 - 👉 Es una sentencia SQL utilizada para insertar nuevos registros en una tabla. 
 - 👉 En el ejemplo, estamos insertando un nuevo registro en la tabla "camadas" coo valores especifícos para las columnas "nombre" y "dias".
 - 👉 La cláusula **VALUES** se utiliza junto con **INSERT INTO** para especificar los valores que se inserterán en las columnas de la tabla. 
 - 👉 En el ejemplo, estamos insertando el valor "2717" en la columna de "nombre" y el valor de "Martes y Jueves" en la columna "días". 
-![Insert into](image-3.png)
+
+```sql
+INSERT INTO camadas(nombre, dias)
+VALUES(2717, "Martes y Jueves");
+```
 
 ### Conclusión
 - 👉 **Create table**: Crea una nueva tabla en la base de datos con columnas y tipos de datos especificados.
