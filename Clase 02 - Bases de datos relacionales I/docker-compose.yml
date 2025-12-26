@@ -1,0 +1,29 @@
+# Versión de docker compose
+version: '5.0.1'
+
+# Me permite crear los contenedores que se van a comunicar gracias a compose
+services: 
+  postgres:
+    image: postgres  # en que imagen se va a basar mi contenedor
+    restart: always # si algo falla, se reinicia solo
+    ports: 
+      - "5432:5432" # el primero en puerto de mi compu, el segundo el de docker
+    environment:
+      # Dónde hosteo a base de datos
+      - DATABASE_HOST=127.0.0.1 # localhost
+      - POSTGRES_USER=ceci # usuario por defecto en postgres
+      - POSTGRES_PASSWORD=ceci
+      - POSTGRES_DB=test # nombre por defecto de la bd a crear
+
+  pgadmin:
+    image: elestio/pgadmin
+
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "cecilia.perdomo@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "123456"
+    
+    ports:
+      - "80:80"
+
+    depends_on:
+      - postgres # Espera que levante postgres

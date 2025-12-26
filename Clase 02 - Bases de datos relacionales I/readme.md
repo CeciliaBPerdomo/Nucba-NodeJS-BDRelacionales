@@ -46,6 +46,14 @@
 - 👉 Una vez creado el archivo, podemos levantar las imágenes con el comando `docker-compose up`.
 - 👉 Esto descargará y ejecutará las imágenes necesarias si aún no estás disponibles en nuestra PC. 
 
+#### Versión
+- 👉 Última versión de docker: `https://docs.docker.com/compose/releases/release-notes/`
+- 👉 Si querés chequear la versión instalada en tu sistema, podés correr:
+```bash
+docker compose version
+```
+- Para informaión de los services: `https://hub.docker.com/`
+
 ## ¿ Qué es pgAdmin ?
 - 👉 Es una herramienta de administración y desarrollo de código abierto diseñada para trabajar con **PostgreSQL**, un potente sistema de gestión de bases de datos relacional. 
 - 👉 Proporciona una interfaz gráfica intuitiva y fácil de usuar que facilita la administración de base de datos PosgreSQL y permite realizar tareas comunes de manera eficiente.
